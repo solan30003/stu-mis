@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  undertow:
+    accesslog:
+      enabled: true
+    io-threads: 2
+    worker-threads: 16
+    max-http-post-size: -1B
+
+spring:
+  profiles:
+    active: common,dev
+  application:
+    name: fx-starter-app
+fx:
+  app-name: test
+  hosts:
+    - abc
+    - dev
+    - prod
+  enabled: false
+  cache-driver: memory
