@@ -14,6 +14,8 @@ import org.springframework.stereotype.Service;
 public class StudentServiceImpl implements StudentService {
     @Override
     public int add(StuInfoEntity stuInfoEntity) {
+        HardWorkAdapter h = new HardWorkAdapter(null);
+        h.applyWork(null);
         return 0;
     }
 
